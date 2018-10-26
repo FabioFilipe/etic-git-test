@@ -1,0 +1,110 @@
+/*header*/
+.header1 {
+      display: flex; 
+      justify-content: space-around;
+      align-items: center;
+      background: #024b5a;
+      box-shadow: 0 5px 10px -10px #111;
+      height: 200px
+    }
+
+.logo {
+        order: 1;
+        padding: 2em;
+        border-radius: 100%;
+        0 0 0 3px #00bfff,
+        0 0 0 15px #111;
+        color: #00bfff;
+    }
+
+.text-header {
+        color: white;
+}
+
+/*navbar*/
+.flexcontainerrowspace {
+  display: flex;
+  flex-direction: column;
+  height: 5.7vh;
+  align-items: center;
+  background-color: #ccc;
+}
+.flexcontainerrowspace div {
+  display: flex;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+li {
+  flex-grow: 1;
+}
+.anchor {
+  display: block;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 0.1em;
+  text-decoration: none;
+  color: #000000;
+  width: 9em;
+  
+  font-family: 'verdana', sans-serif;
+}
+.anchor:hover {
+  background-color: #024b5a;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+  text-decoration: none;
+  color: white;
+  border-radius: 8em;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+/* Main */
+.aside {
+  background-color: DarkGrey;
+  flex-grow: 60;
+}
+
+.main {
+  background-color: LightGrey;
+  flex-grow: 20;
+}
+
+.flexcontainermain {
+  background-color: #E0E0E0;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+}
+
+.flexcontainermain div {
+  display: flex;
+  height: 100vh;
+  border: 2px solid white;
+}
+
+/*footer*/
+.footer1 {
+      display: flex; 
+      justify-content: space-around;
+      align-items: center;
+      background: #024b5a;
+      box-shadow: 0 5px 10px -10px; 
+      height: 80px;
+    }
+.footer-text {
+      color: white;
+}
